@@ -26,7 +26,7 @@ const navigationItems = [
   },
 ];
 const logo = createElement(ELEMENT.IMG);
-setAttribute(logo, 'src', 'Images/logo.png');
+setAttribute(logo, 'src', 'images/logo.png');
 setAttribute(logo, 'id', 'storeLogo')
 const root = getElementById(ROOT_ID);
 const navigation = createElement(ELEMENT.NAV);
