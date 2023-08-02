@@ -75,9 +75,9 @@ const shoesPage = (parentElement) => {
     shoeTitle.push(shoeName);
     shoePrices.push(shoePrice);
   }
-  setAttribute(myShoeImage[0], "src", "Images/nike1.png");
-  setAttribute(myShoeImage[1], "src", "Images/nike2.png");
-  setAttribute(myShoeImage[2], "src", "Images/nike3.png");
+  setAttribute(myShoeImage[0], "src", ".../Images/nike1.png");
+  setAttribute(myShoeImage[1], "src", ".../Images/nike2.png");
+  setAttribute(myShoeImage[2], "src", ".../Images/nike3.png");
   setAttribute(myShoeImage[3], "src", "Images/adidas1.png");
   setAttribute(myShoeImage[4], "src", "Images/adidas2.png");
   setAttribute(myShoeImage[5], "src", "Images/adidas3.png");
