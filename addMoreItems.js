@@ -44,12 +44,12 @@ const addMoreItems = () => {
     shoeTitle.push(shoeName);
     shoePrices.push(shoePrice);
   }
-  setAttribute(myShoeImage[0], "src", "Images/nike1.png");
-  setAttribute(myShoeImage[1], "src", "Images/nike2.png");
-  setAttribute(myShoeImage[2], "src", "Images/nike3.png");
-  setAttribute(myShoeImage[3], "src", "Images/adidas1.png");
-  setAttribute(myShoeImage[4], "src", "Images/adidas2.png");
-  setAttribute(myShoeImage[5], "src", "Images/adidas3.png");
+  setAttribute(myShoeImage[0], "src", "images/nike1.png");
+  setAttribute(myShoeImage[1], "src", "images/nike2.png");
+  setAttribute(myShoeImage[2], "src", "images/nike3.png");
+  setAttribute(myShoeImage[3], "src", "images/adidas1.png");
+  setAttribute(myShoeImage[4], "src", "images/adidas2.png");
+  setAttribute(myShoeImage[5], "src", "images/adidas3.png");
   textContent(shoeTitle[0], "Nike Zoom Fly 5");
   textContent(shoeTitle[1], "Nike Impact 3");
   textContent(shoeTitle[2], "Nike Air Max SYSTM");
