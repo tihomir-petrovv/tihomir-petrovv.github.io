@@ -1,0 +1,347 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 1vw;
+  font-family: "Edu SA Beginner", cursive;
+  text-align: left;
+  background-color: #d3d3d3;
+}
+/* Making navigation bar */
+#storeLogo {
+  width: 10vw;
+}
+#navigation {
+  position: sticky;
+}
+#navBar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex: 1;
+  margin-left: -30px;
+}
+#navBar > div {
+  margin-left: 2vw;
+  font-size: 2vw;
+}
+nav {
+  background: linear-gradient(75deg, #ff6f61, #191970 115%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.3vw;
+  margin-bottom: 5vh;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Making Grid layout for shoes */
+.mainPageItems {
+  display: grid;
+  grid-template-areas:
+  "head side side"
+  "head main main";
+  font-size: 2vw;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5vh;
+}
+.navigation__link {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #d3d3d3, #ffd700);
+}
+#categoryName{
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ff6f61, #191970)
+}
+.filterItems{
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ff6f61, #191970);
+}
+.mainPageItems:nth-child(1) {
+  width: 1vw;
+}
+#shoeItems {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "head side side"
+    "head main main"
+    "head main main";
+  align-items: left;
+  width: 70vw;
+  height: 100%;
+  margin-top: 2vh;
+  row-gap: 5vh;
+}
+#shoeItems > div > img {
+  width: 10vw;
+  height: 30vh;
+  margin-left: 2vw;
+  margin-bottom: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.shoeSections {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #d8e3de;
+  border-radius: 10%;
+  box-shadow: 5px 10px #d8e3de;  
+}
+.shoeSections:hover {
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ff6f61, #191970);
+}
+
+.priceTag {
+  font-size: 1.2vw;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ff6f61, #191970);
+}
+#renderFilter {
+  grid-area: head;
+  width: 15vw;
+  margin-left: 1vw;
+}
+
+.shoeBrandName {
+  margin-top: -15px;
+}
+#addItems {
+  background-color: transparent;
+  border: 2px solid #d8e3de;
+  border-radius: 10px;
+  box-shadow: 2px 2px #d8e3de;
+  text-align: center;
+  font-size: 1.2vw;
+  height: 5vh;
+}
+#filter1 {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+#filter2 {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+input[type="range"] {
+  height: 2px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 80%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 80%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #ff6f61;
+  border-radius: 5px;
+  border: 0px solid #191970;
+}
+input[type="range"]::-webkit-slider-thumb {
+  border: 1px solid #191970;
+  height: 8px;
+  width: 12px;
+  border-radius: 25px;
+  background: #ff6f61;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+select {
+  width: 13vw;
+  height: 5vh;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ff6f61, #191970);
+}
+#sortBy{
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ff6f61, #191970);
+}
+#selectOption select {
+  font-size: 2vw;
+  text-align: center;
+  border: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ff6f61, #191970);
+}
+#selectOption {
+  appearance: none;
+  font-size: 2vw;
+  text-align: center;
+  border: none;
+}
+#selectOptionByName {
+  appearance: none;
+  font-size: 2vw;
+  text-align: center;
+  border: none;
+}
+#sortPagePlace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Making adding button */
+#addItems:hover {
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ff6f61, #191970);
+}
+#buttonSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 7.5vh;
+}
+/* Making footer */
+#footerSection {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2vw;
+  background: linear-gradient(45deg, #ff6f61, #191970 95%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #d8e3de;
+  margin-top: 2vh;
+}
+#footerSection > a {
+  text-decoration: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #d3d3d3, #ffd700);
+}
+#footerSection > div{
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #d3d3d3, #ffd700);
+}
+
+@media only screen and (max-width: 450px){
+  nav {
+    background: linear-gradient(75deg, #ff6f61, #191970 115%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 5vh;
+  }
+  #storeLogo {
+    width: 35vw;
+    margin-left: -5vw;
+  }
+  #navBar > div {
+    margin-left: 2vw;
+    font-size: 8vw;
+  }
+  #shoeItems {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 70vw;
+    height: 100%;
+    margin-top: 2vh;
+    row-gap: 5vh;
+  }
+  #shoeItems > div > img {
+    width: 35vw;
+    height: 20vh;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .shoeSections {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d8e3de;
+    border-radius: 10%;
+    box-shadow: 5px 10px #d8e3de;  
+  }
+  .mainPageItems {
+    font-size: 5vw;
+    width: 100%;
+    height: 100%;
+  }
+  #sortPagePlace{
+    display: flex;
+    flex-direction: column;
+  }
+  #renderFilter{
+    width: 25vw;
+  }
+  #selectOption {
+    appearance: none;
+    font-size: 4vw;
+    text-align: center;
+    width: 25vw;
+    height: 2vh;
+    border: none;
+  }
+  #selectOptionByName {
+    appearance: none;
+    font-size: 4vw;
+    text-align: center;
+    width: 25vw;
+    height: 2vh;
+    border: none;
+  }
+  #addItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    margin-top: -4vh;
+  }
+  #footerSection {
+    font-size: 6vw;
+  }
+}
